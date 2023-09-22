@@ -1,20 +1,28 @@
 {
-name": "meta",
-version": "1.0.0",
-description": "",
-scripts": {
-   "build": "echo \"No build specified\" && exit 1",
-   "test": "echo \"No test specified\" && exit 1",
-   "start": "node index.js"
-},
-"repository": {
+  "name": "meta",
+  "version": "1.0.0",
+  "description": "Una aplicación web para administrar tareas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.1.3"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.0",
+    "chai": "^4.3.4"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "author": "Nombre del Autor <correo@ejemplo.com>",
+  "license": "MIT",
+  "repository": {
     "type": "git",
-    "url": "git+https://github.com/soridelov/meta.git"
-},
-"author": "",
-"license": "ISC",
-"bugs": {
-    "url": "https://github.com/soridelov/meta/issues"
-},
-"homepage": "https://github.com/soridelov/meta#readme"
+    "url": "https://github.com/soridelov/meta.git"
+  },
+  "keywords": ["node.js", "express", "API", "tareas"]
 }
